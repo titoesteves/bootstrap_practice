@@ -56,19 +56,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.navbar-default {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    min-height: 90px;
+    padding-top: 20px;
+}
+
+.nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    -moz-text-shadow: 1px 1px 1px black;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: transparent;
+}
 
 
+body > section {
+    clear: both;
+    padding: 50px 0;
+}
 
+section#slider {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e3d5a+0,0c223b+100 */
+    background: #1e3d5a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e3d5a 0%, #0c223b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e3d5a), color-stop(100%,#0c223b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #1e3d5a 0%,#0c223b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e3d5a 0%,#0c223b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e3d5a 0%,#0c223b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1e3d5a 0%,#0c223b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+}
 
+section#slider img {
+    margin: 0 auto;
+}
 
+h2, h3 {
+    color: #15365b;
+    margin-bottom: 30px;
+}
 
+h2:after, h3:after {
+    content: "";
+    height: 5px;
+    width: 40px;
+    background-color: #15365b;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
 
+.blue-circle {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #15365b;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 0 auto;
+}
 
-
-
-
-
-
+#about .blue-circle{
+    width: 50%;
+    padding-bottom: 50%;
+}
 
 /* ==========================================================================
    Media Queries

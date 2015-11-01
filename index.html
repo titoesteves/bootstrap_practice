@@ -11,23 +11,55 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/vendor/jquery-2.1.4.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
     </head>
     <body>
     <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <nav>
+            <div class="navbar-collapse collapse">
                 <ul class="nav nav-justified">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>   
+            </div>
         </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        </nav>   
     </header>
+    <section id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/slider_1.png">
+            </div>
+            <div class="item">
+                <img src="img/slider_2.png">
+            </div>
+            <div class="item">
+                <img src="img/slider_3.png">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1" class="active"></li>
+            <li data-target="#slider" data-slide-to="2" class="active"></li>
+        </ol>
+    </section>
     <section id="about" class="about">
         <div class="container">
             <div class="row">
@@ -59,7 +91,7 @@
                             <h4>Facebook & Twitter</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
+                        <div class="col-xs-4">
                             <div class="blue-circle col-xs-4"></div>
                         </div>
                     </div>
@@ -68,7 +100,7 @@
                             <h4>User Points</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
+                        <div class="col-xs-4">
                             <div class="blue-circle col-xs-4"></div>
                         </div>
                     </div>
@@ -77,7 +109,7 @@
                             <h4>Buy Tickets online</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
+                        <div class="col-xs-4">
                             <div class="blue-circle col-xs-4"></div>
                         </div>
                     </div>
@@ -86,7 +118,7 @@
                             <h4>Check seat availability</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
+                        <div class="col-xs-4">
                             <div class="blue-circle col-xs-4"></div>
                         </div>
                     </div>
@@ -95,7 +127,7 @@
                             <h4>Watch movie trailers</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
+                        <div class="col-xs-4">
                             <div class="blue-circle col-xs-4"></div>
                         </div>
                     </div>
@@ -109,8 +141,8 @@
                             <h4>Pay with credit card</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
-                            <div class="blue-circle col-xs-4 col-xs-pull-8"></div>
+                        <div class="col-xs-4 col-xs-pull-8">
+                            <div class="blue-circle"></div>
                         </div>
                     </div>
                     <div class="item-feature row">
@@ -118,8 +150,8 @@
                             <h4>Rate the movie</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
-                            <div class="blue-circle col-xs-4 col-xs-pull-8"></div>
+                        <div class="col-xs-4 col-xs-4 col-xs-pull-8">
+                            <div class="blue-circle"></div>
                         </div>
                     </div>
                     <div class="item-feature row">
@@ -127,8 +159,8 @@
                             <h4>Reward points</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
-                            <div class="blue-circle col-xs-4 col-xs-pull-8"></div>
+                        <div class="col-xs-4 col-xs-4 col-xs-pull-8">
+                            <div class="blue-circle"></div>
                         </div>
                     </div>
                     <div class="item-feature row">
@@ -136,8 +168,8 @@
                             <h4>checkin intergrated</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
-                            <div class="blue-circle col-xs-4 col-xs-pull-8"></div>
+                        <div class="col-xs-4 col-xs-4 col-xs-pull-8">
+                            <div class="blue-circle"></div>
                         </div>
                     </div>
                     <div class="item-feature row">
@@ -145,8 +177,8 @@
                             <h4>access all promos</h4>
                             <p>This is a p tag</p>
                         </div>
-                        <div>
-                            <div class="blue-circle col-xs-4 col-xs-pull-8"></div>
+                        <div class="col-xs-4 col-xs-4 col-xs-pull-8">
+                            <div class="blue-circle"></div>
                         </div>
                     </div>
                 </div>
@@ -158,20 +190,91 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="img/modal_tickets.png">
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
+                        <img class="img-responsive" src="img/modal_tickets.png">
+                    </a>
                 </div>
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="img/modal_trailers.png">
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png">
+                        <img class="img-responsive" src="img/modal_trailers.png">
+                    </a>
                 </div>
                 <div class="col-xs-4">
-                    <img class="img-responsive" src="img/modal_points.png">
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png">
+                        <img class="img-responsive" src="img/modal_points.png">
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div id="modal" class="modal fade" role="dialog" tabIndex="-1" aria-labelledby="modal" aria-hidden="true">
+            <div class="modal-body">
+                <img src="#">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
         </div>
     </section>
     <section id="parallax" class="parallax">
        <h2 class="parallax text-center">Also available for iPad</h2> 
     </section>
+    <section id="download" class="download">
+        <h2 class="text-center text-uppercase">Download</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="content-downloads clearfix">
+                    <div class="phone"> 
+                    <img src="img/download.png" class="img-responsive">
+                    </div>
+                    <div class="downloads-empty"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-offset-7">
+                                <h2 class="text-center text-uppercase">Choose your platform</h2>
+                                <section class="platforms text-center">
+                                    <div class="col-xs-5">
+                                        Download for <strong>Apple iOS</strong>
+                                    </div>
+                                    <div class="col-xs-5">
+                                        Download for <strong>Android</strong>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support" class="support">
+        <h2 class="text-center text-uppercase">Support</h2>
+        <p class="text-center">Please fill out the form</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <form id="form">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="message" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn-default" type="submit" value="Send">
+                    </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-center text-uppercase"> All rights reserved 2015</p>
+    </footer>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
