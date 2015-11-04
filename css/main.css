@@ -81,6 +81,11 @@ textarea {
     -moz-text-shadow: 1px 1px 1px black;
 }
 
+.nav > li.active {
+    background-color: #9E9E9E;
+    transition: 1s all ease;
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
     background-color: transparent;

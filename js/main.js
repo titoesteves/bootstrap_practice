@@ -28,4 +28,9 @@ $(document).ready(function() {
   });
 });
 
-smoothScroll.init();
+smoothScroll.init({
+  speed: 700,
+  easing: 'easeInOutCubic',
+  updateURL: false,
+  offset: 0
+});
